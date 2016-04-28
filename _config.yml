@@ -6,7 +6,7 @@ email: qianhaizhang@gmail.com
 description: "测试"
 keyword: ""
 url: "http://zhanqqianhai.com"              # your host, for absolute URL
-baseurl: "/zqhai.github.io"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
