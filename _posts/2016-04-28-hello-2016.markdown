@@ -1,0 +1,25 @@
+---
+layout:     post
+title:      "Hello 2016"
+subtitle:   " \"Hello 2016\""
+date:       2016-04-28 12:00:00
+author:     "hai"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - 生活
+    - 开发
+---
+
+> “Yeah It's on. ”
+
+
+## 前言
+
+Hello World
+
+
+
+
+## 正文
+
+Hello World
