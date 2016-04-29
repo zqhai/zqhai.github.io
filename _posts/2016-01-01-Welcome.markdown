@@ -2,7 +2,7 @@
 layout:     post
 title:      "Welcome to Hai Blog"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2016-04-29 00:00:00
+date:       2016-01-01 00:00:00
 author:     "hai"
 header-img: "img/post-head/201604291511.jpg"
 tags:
@@ -10,12 +10,6 @@ tags:
 ---
 
 > “Yeah It's on. ”
-
-
-## 前言
-
-Hello World
-
 
 
 
