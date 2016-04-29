@@ -2,7 +2,7 @@
 layout:     post
 title:      "技术传播介绍"
 subtitle:   " \"纲领\""
-date:       2016-04-29 00:00:00
+date:       2016-04-28 00:00:00
 author:     "Hai"
 header-img: "img/post-head/201604291509.jpg"
 tags:
