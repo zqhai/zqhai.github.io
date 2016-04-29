@@ -1,0 +1,132 @@
+---
+layout:     post
+title:      "技术传播介绍"
+subtitle:   " \"纲领\""
+date:       2016-04-29 00:00:00
+author:     "Hai"
+header-img: "img/post-head/201604291509.jpg"
+tags:
+    - 技术写作
+---
+
+
+# 起源﻿
+
+技术传播（Technical Communication）这个行业的兴起是由于技术快速发展产生的需求，而当时的产品研发人员做的不好，所以让语言功底比较好的技术人员独立出来写作，进而发展成为一个专门的职业。
+
+# 现状﻿与发展
+
+70年代美国大学已经出现技术写作（Technical Writing）专业，现如今，跟其他职业一样，技术写作在发达国家尤其是美国是很多行业的一种，很多公司都有一个专门的 Technical Writer 职位。
+
+而在国内，Technical Writer 一般称作“资料工程师”或者“文档工程师”，给人的印象还处于码字或文档管理的角色，而且专门的技术写作职位较少，大多集中在华为、中兴这种产品复杂且海外市场份额较大的公司。不过幸运的是，在这些公司，技术写作已经发展了一二十年，算是国内技术写作行业的先驱者，而且近几年，北京大学已经开设技术写作相关课程。﻿
+
+从国外的发展情况看，技术写作已经往 Technical Communication、User Assistance（UA，用户帮助）方向发展，不在单单强调写作，而是要更好的传播技术、更好的帮助用户。
+
+从行业来看，IT、通信、航空、化工、金融、汽车甚至政府里面都有技术传播的需求，越是复杂的技术或设备行业，就越是需要专业的技术传播从业者。
+
+
+# 标准组织
+
+在国外，有很多技术传播的行业组织，如：
+
+STC﻿ - [Society for Technical Communication](http://www.stc.org/)
+
+IEEE PCS﻿ - [IEEE Professional Communication Society](https://www.wikiwand.com/en/IEEE_Professional_Communication_Society)
+
+OASIS﻿ - [Advancing open standards for the information society](https://www.oasis-open.org/)
+
+TCeurope﻿ - [The European umbrella organisation for technical communication](http://tceurope.org/)
+
+# 技术传播定义
+
+在wikipedia上，技术传播是这么定义的：
+
+> Technical communication is a means to convey scientific, engineering, or other technical information.
+
+> 技术传播是一种传达科学、工程或其他技术信息的手段。
+
+而在 Mike Markel 的《Technical Communication》一书中，作者对技术传播是这么定义的：
+
+> Technical communication is the process of finding and using information and sharing meaning.
+
+> 技术传播是查找、使用信息和分享原意的过程。
+
+STC的网站上多技术传播是这么定义的：
+
+> Technical communication is a broad field and includes any form of communication that exhibits one or more of the following characteristics:
+
+> Communicating about technical or specialized topics, such as computer applications, medical procedures, or environmental regulations.
+
+> Communicating by using technology, such as web pages, help files, or social media sites.
+
+> Providing instructions about how to do something, regardless of how technical the task is or even if technology is used to create or distribute that communication.
+
+# 技术传播者的价值
+
+STC网站上这样描述技术传播的价值：
+
+> The value that technical communicators deliver is twofold: They make information more useable and accessible to those who need that information, and in doing so, they advance the goals of the companies or organizations that employ them.
+
+> 技术传播者的价值是双重的：对需要信息的人来说，他们使得信息更加易用和容易获取；而在此过程中，他们促使雇佣他们的公司和组织更愿意雇佣他们。
+
+# 我的认识
+
+技术传播从业者的目标是使信息传达的更准确、更易获取、更易使用。能够给客户带来利益，降低产品成本，让客户能够更有效的使用产品，提升客户满意度。
+
+技术写作不是靠技术写作人员一个人单干，更多的是一个多部门（人）相互协同的系统工程。而对技术传播从业者而言，更强调的是一种信息整合和加工的能力。
+
+技术传播者好比大厨，写作就是做菜，大厨要想做出好菜，除了厨艺要好外，还需要有好的原材料；同样，技术写作就需要周边的设计、开发、测试来给你提供原材料，经过你做信息整合与加工，写作好的技术资料。
+
+# 技术传播到底做什么
+从结果看，技术传播交付的主要是面向最终客户的资料，包括文档和帮助。
+
+在交付过程中需要做的事情往往包括：
+
+1. 收集需求
+
+2. 设计信息架构
+
+3. 制定计划
+
+4. 制定模板和规范
+
+5. 开发资料
+
+6. 管理资料
+
+# 相关职位
+在STC网站上，技术传播行业分得非常细，有如下职位，从里面我们也可以看出技术传播行业基本上要做的工作就是这些。
+
+* Technical Writers & Editors
+
+* Indexers
+
+* Information Architects
+
+* Instructional Designers
+
+* Technical Illustrators
+
+* Globalization & Localization Specialists
+
+* Usability & Human Factors Professionals
+
+* Visual Designers
+
+* Web Designers & Developers
+
+* Teachers & Researchers of Technical Communication
+
+* Trainers and E-Learning Developers
+
+# 前景
+随着技术的发展与进步，对专业的技术传播的需求也会变的更多。
+
+行业发展方面，目前国内华为、中兴、H3C、海康威视等企业都有专业的技术写作团队，阿里云等互联网公司也再开始组建专业技术写作团队，我了解到这些企业基本都是把技术写作归到研发团队下面，跟其他研发职位有等同的待遇与职业升迁机会。
+
+另外国外的一些专业技术传播公司像 [Sigma Technology](http://sigmatechnology.se/) 都在中国开设了分公司，可以说技术传播行业在中国呈现出向上发展的态势。
+
+
+
+
+转自 [jorgensen](http://www.jianshu.com/p/fd3e9d7c6562) 已断更
