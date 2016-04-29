@@ -3,7 +3,7 @@ layout:     post
 title:      "Welcome to Hai Blog"
 subtitle:   " \"Hello World, Hello Blog\""
 date:       2016-01-01 00:00:00
-author:     "hai"
+author:     "Hai"
 header-img: "img/post-head/201604291511.jpg"
 tags:
     - 随笔
