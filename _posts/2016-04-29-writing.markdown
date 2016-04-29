@@ -10,7 +10,8 @@ tags:
 ---
 
 
-> 近期整理的技术文档写作规范，应用于 https://c.163.com/wiki/index.php?title=蜂巢开放平台文档规范
+> 近期整理的技术文档写作规范
+> 应用于 https://c.163.com/wiki/index.php?title=蜂巢开放平台文档规范
 
 ### 用词
 
