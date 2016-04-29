@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "的的"
-subtitle:   " \"Hello World, Hello Blog\""
+title:      "技术文档规范"
+subtitle:   " \"咬文嚼字\""
 date:       2016-04-29 00:00:00
 author:     "hai"
 header-img: "img/post-head/20160429.jpg"
