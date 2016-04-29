@@ -4,7 +4,7 @@ title:      "Welcome to Hai Blog"
 subtitle:   " \"Hello World, Hello Blog\""
 date:       2016-04-29 00:00:00
 author:     "hai"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/post-head/201604291511.jpg"
 tags:
     - 随笔
 ---

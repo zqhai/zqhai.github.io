@@ -1,16 +1,16 @@
 ---
 layout:     post
-title:      "技术文档规范"
+title:      "技术文档写作规范"
 subtitle:   " \"咬文嚼字\""
 date:       2016-04-29 00:00:00
 author:     "Hai"
-header-img: "img/post-head/20160429.jpg"
+header-img: "img/post-head/201604291509.jpg"
 tags:
     - 技术写作
 ---
 
 
-> 近期整理的技术文档写作规范
+> 近期整理的技术文档写作规范，应用于 https://c.163.com/wiki/index.php?title=蜂巢开放平台文档规范
 
 ### 用词
 
@@ -55,17 +55,15 @@ tags:
 * 避免使用斜体。
 * 强调时可用粗体，但请谨慎。
 * 代码使用代码标签，超过一行代码应用高亮样式，如：
-
-```Python 
-#-*- coding: utf-8 -*-
+<pre><code>Python 
+\#-*- coding: utf-8 -*-
 from flask import Flask
 app = Flask(__name__)
 @app.route("/")
 def hello():
     return "Hello World!"
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=80)
-```
+    app.run(host="0.0.0.0", port=80) </code></pre>
 
 ### 列表
 
