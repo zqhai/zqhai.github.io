@@ -1,0 +1,73 @@
+---
+layout:     post
+title:      "如何把知识管理做到极致"
+subtitle:   " \"好记性不如烂笔头\""
+date:       2016-05-11 00:00:00
+author:     "Hai"
+header-img: "img/post-head/201605181737.jpg"
+tags:
+    - Tool
+---
+
+# 你是不是遇到过以下场景
+
+* 微博、微信公众号关注了一堆，推文要么被无感，要么「阅后即焚」；
+* 知乎、简书高端大气上档次，翻页再翻页，总是缺点啥；
+* 收藏了海量网站博客，走一走瞧一瞧，走过路过就拜拜；
+* 读一部好书，你问我笔记在哪里？我不知道啊。
+
+# 看完这篇文章能让哪些人受益
+
+* 重度阅读症患者
+* 知识收集癖
+* 效率工具控
+ 
+# 说了这么多来点干货吧
+
+* 本文是两个月「印象笔记」使用感受，应该给我广告费。
+
+# 为什么印象笔记可以满足我的需求
+
+* 多端同步
+* 支持 Markdown 格式
+* 随时随地收集我所需的任何信息
+* 作为半个文字工作者，常用的 Sublimtext 支持 Evernote 插件很棒
+* 其他使用场景还不曾使用
+
+# 那么怎么用呢
+
+> 信息收集
+
+* [网页 -> 印象笔记](https://www.yinxiang.com/webclipper/guide/)
+* [微信 -> 印象笔记](https://help.yinxiang.com/hc/zh-cn/articles/213419567)
+* [微博 -> 印象笔记](https://appcenter.yinxiang.com/app/myyxbj/weibo/)
+* [邮件 -> 印象笔记](https://help.yinxiang.com/hc/zh-cn/articles/209005347)
+* [IFTTT](https://ifttt.com/evernote)
+* 知乎，简述等移动 APP 直接使用分享功能，推送至印象笔记。
+* 并不是所有 APP 都支持，但可以曲线救国：由于之前阅读渠道太多，后来开始用推酷（暂不论爬虫道不道德，好歹不用我开一堆东西），结果推酷不支持印象笔记分享，只能复制链接或者保存到微信。
+
+> SublimeText
+
+* [sublime-evernote 插件](https://github.com/bordaigorl/sublime-evernote)
+
+> Makrdown
+
+* 直接用 SublimeText + [OmniMarkupPreviewer](http://theo.im/OmniMarkupPreviewer/)
+* 或 [马克飞象](https://maxiang.io/)
+
+> 知识框架
+
+根据自己的领域创建知识框架：
+
+* 一级目录（笔记本组）：领域
+* 二级目录（笔记本）：细分
+
+你的领域可能在不断拓展，但是你必须有一个总体规划。作为一个打杂的，我的知识框架如下：
+![](https://raw.githubusercontent.com/zqhai/zqhai.github.io/master/img/post/201605181737.jpg)
+
+# 给我个理由让我不用 Ta
+* 钱，高级用户148元/年，虽说轻度使用免费帐户也够了，但是流量你伤不起；
+* 现在我的知识库还不多，一旦体量上来之后，不知道会是什么感受；
+* 没法使用公开链接分享笔记；
+* Windows 端 UI 真的真的很难看；
+* 有道是免费的。
