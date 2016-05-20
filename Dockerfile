@@ -23,13 +23,8 @@ RUN gem install jekyll
 RUN gem install jekyll-paginate
 
 COPY . /srv/jekyll
-RUN cd /srv/jekyll
-RUN jekyll build
-
 WORKDIR /srv/jekyll
 
 EXPOSE 4000 80
 
-
-
-CMD jekyll serve
+CMD jekyll build
