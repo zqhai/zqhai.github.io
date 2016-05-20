@@ -26,6 +26,6 @@ COPY . /srv/jekyll
 
 WORKDIR /srv/jekyll
 
-#RUN jekyll bulid
+RUN jekyll bulid
 
 CMD jekyll serve
