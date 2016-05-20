@@ -25,5 +25,5 @@ RUN gem install jekyll-paginate
 COPY . /srv/jekyll
 WORKDIR /srv/jekyll
 
-RUN jekyll build
+#RUN jekyll build
 #RUN jekyll serve --host=* --port=80
