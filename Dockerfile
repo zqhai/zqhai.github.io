@@ -24,8 +24,8 @@ RUN gem install jekyll-paginate
 
 COPY . /srv/jekyll
 
-#WORKDIR /srv/jekyll
+WORKDIR /srv/jekyll
 
 #RUN jekyll bulid
 
-#CMD jekyll serve
+CMD jekyll serve
