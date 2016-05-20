@@ -26,4 +26,4 @@ COPY . /srv/jekyll
 WORKDIR /srv/jekyll
 
 RUN jekyll build
-RUN jekyll serve --host=* --port=80
+#RUN jekyll serve --host=* --port=80
