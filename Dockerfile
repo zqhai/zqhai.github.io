@@ -25,4 +25,4 @@ RUN gem install jekyll-paginate
 COPY . /srv/jekyll
 WORKDIR /srv/jekyll
 
-ENTRYPOINT ["jekyll" "serve --host=* --port=80"]
+CMD ["jekyll" "serve --host=* --port=80"]
