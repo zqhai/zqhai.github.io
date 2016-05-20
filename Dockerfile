@@ -25,5 +25,5 @@ RUN gem install jekyll-paginate
 COPY . /srv/jekyll
 WORKDIR /srv/jekyll
 
-EXPOSE 4000 80
+EXPOSE 8081
 
