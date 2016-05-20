@@ -27,4 +27,3 @@ WORKDIR /srv/jekyll
 
 EXPOSE 4000 80
 
-CMD jekyll build
