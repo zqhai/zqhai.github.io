@@ -1,0 +1,84 @@
+---
+layout:     post
+title:      "两分钟使用网易蜂巢自动化部署 Jekyll 博客"
+subtitle:   " \"网易蜂巢实践\""
+date:       2016-05-23 00:00:00
+author:     "Hai"
+header-img: "img/post-head/201605112005.jpg"
+tags:
+    - 网易蜂巢
+    - Jekyll
+---
+
+> 虽然使用 GitHub 托管 Jekyll 项目免费且不限流量，但是无法满足更高的网络、性能、扩展、监控等需求。
+
+# 适用对象
+
+* 希望极速自建自动化 Jekyll 项目的用户；
+* 使用 GitHub Page 部署 Jekyll 博客的用户 ，不满意国内与 GitHub 的网络连接；
+* 使用 Jekyll 部署项目主页等的企业用户，期望获得更高性能，更可靠服务。
+
+# 准备条件
+
+* 注册 [网易蜂巢](https://c.163.com/)；
+* 基本了解 Jekyll，有 GitHub Page 上部署 Jekyll 项目经验；
+* 首次接触 Jekyll，想了解如何像黑客一样写作，请戳：[什么是 Jekyll](https://jekyllrb.com/)、[如何在 GitHub Page 创建 Jekyll 博客](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)。
+
+
+# 实践目标
+
+* 持续集成：及时发现 GitHub 内容更新，自动 Git pull，自动编译发布 Jekyll 项目；
+* 一键部署：通过 Dockerfile 两分钟极速完成集群部署，无需手工搭建环境；
+* 弹性扩容：紧随业务变化，不停服灵活扩展云计算资源；
+* 性能监控：提供可视化图表和智能分析。提供事件报警，及时发现解决问题；
+* 负载均衡：提供独立 BGP 外网入口。提供高性能、跨网络服务。
+
+
+# 实操部署
+
+## 1. 添加 Dockerfile
+
+在 Github 项目内添加 Dockerfile 文件，内容如下：
+
+```
+FROM hub.c.163.com/nce2/nodejs:0.12.2
+MAINTAINER c.163.com
+RUN wget http://mirrors.163.com/.help/sources.list.vivid
+RUN cp -f sources.list.vivid /etc/apt/sources.list
+RUN apt-get update
+RUN apt-get install -y --force-yes ruby
+RUN apt-get install -y --force-yes ruby-dev
+RUN apt-get install -y --force-yes gcc
+RUN apt-get install -y --force-yes make
+RUN gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
+RUN gem install jekyll
+RUN gem install jekyll-paginate
+COPY . /srv/jekyll
+WORKDIR /srv/jekyll
+CMD jekyll build && jekyll serve --host=* --port=80
+```
+
+## 2. 创建网易蜂巢集群
+
+![创建容器](http://zhangqianhai.com/img/post/20160523/creat.png)
+
+经济实惠，更多创建指南详见：[如何创建集群](https://c.163.com/wiki/index.php?title=创建集群)。
+
+## 3. 添加 WebHook
+进入蜂巢控制台，复制集群 WebHook URL：
+![](http://zhangqianhai.com/img/post/20160523/web-hook-url.png)
+
+GitHub 项目「Settings」添加 WebHook：
+![添加WebHook](http://zhangqianhai.com/img/post/20160523/add-webhook.png)
+注：添加时「Content type」下拉选择「application/x-www-form-urlencoded」，其他选项默认即可。
+
+## 4. DONE
+
+设置域名解析指向集群的公网 IP：
+
+![公网IP](http://zhangqianhai.com/img/post/20160523/bgp-ip.png)
+
+弹性扩容、性能监控、日志服务、版本管理等更多功能详见：[集群管理](https://c.163.com/wiki/index.php?title=集群管理)
+
+
+
