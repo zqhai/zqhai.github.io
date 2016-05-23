@@ -43,6 +43,6 @@ Baidu 关键字"关于进口 SYR DUO FR 和国产的区别"。取其中部分内
 **查看官网 syr.de 或 ebay.de,amazon.de 就知道正统德国货是什么样。**
 
 # 买家秀
-![](https://raw.githubusercontent.com/zqhai/zqhai.github.io/master/img/post/201604291705.jpg)
+![](../img/post/201604291705.jpg)
 
 注：CHH作者也是我，原图没了。
