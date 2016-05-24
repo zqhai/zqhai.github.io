@@ -81,7 +81,7 @@ CMD jekyll build && jekyll serve --host=* --port=80
 
 ![公网IP](http://zhangqianhai.com/img/post/20160523/bgp-ip.png)
 
-弹性扩容、性能监控、日志服务、版本管理等更多功能详见：[集群管理](https://c.163.com/wiki/index.php?title=集群管理)
+弹性扩容、性能监控、日志服务、版本管理等更多功能详见：[集群管理](https://c.163.com/wiki/index.php?title=集群管理)。
 
 
 
