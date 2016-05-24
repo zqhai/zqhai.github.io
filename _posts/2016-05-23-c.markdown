@@ -77,9 +77,14 @@ CMD jekyll build && jekyll serve --host=* --port=80
 
 ## 4. DONE
 
-设置域名解析指向集群的公网 IP：
-
+进入网易蜂巢集群详情页，查看分配到的公网 IP：
 ![公网IP](http://zhangqianhai.com/img/post/20160523/bgp-ip.png)
+
+在你的域名供应商处，添加一条A记录解析：
+![添加A记录](http://zhangqianhai.com/img/post/20160523/host.png)
+
+等待解析生效后，即可访问：
+![done](http://zhangqianhai.com/img/post/20160523/done.png)
 
 弹性扩容、性能监控、日志服务、版本管理等更多功能详见：[集群管理](https://c.163.com/wiki/index.php?title=集群管理)。
 
