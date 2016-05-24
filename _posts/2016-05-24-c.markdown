@@ -77,7 +77,7 @@ CMD jekyll build && jekyll serve --host=* --port=80
 ![添加WebHook](http://zhangqianhai.com/img/post/20160523/add-webhook.png)
 注：添加时「Content type」下拉选择「application/x-www-form-urlencoded」，其他选项默认即可。
 
-## 4. DONE
+## 4. 添加域名解析
 
 进入网易蜂巢集群详情页，查看分配到的公网 IP：
 
