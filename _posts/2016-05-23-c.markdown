@@ -22,7 +22,8 @@ tags:
 
 * 注册 [网易蜂巢](https://c.163.com/)；
 * 基本了解 Jekyll，有 GitHub Page 上部署 Jekyll 项目经验；
-* 首次接触 Jekyll，想了解如何像黑客一样写作，请戳：[什么是 Jekyll](https://jekyllrb.com/)、[如何在 GitHub Page 创建 Jekyll 博客](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)。
+* 首次接触 Jekyll，这里提供一个 [CleanBlogDemo](https://github.com/zqhai/clean-blog-demo)，可以直接 Fork 使用；
+* 想深入了解如何像黑客一样写作，请戳：[什么是 Jekyll](https://jekyllrb.com/)、[如何在 GitHub Page 创建 Jekyll 博客](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)。
 
 
 # 实践目标
@@ -38,7 +39,7 @@ tags:
 
 ## 1. 添加 Dockerfile
 
-在 Github 项目内添加 Dockerfile 文件，内容如下：
+在你的 Github 项目内添加 Dockerfile 文件（若直接 Fork Demo 则无需再添加 ），内容如下：
 
 ```
 FROM hub.c.163.com/nce2/nodejs:0.12.2
@@ -62,13 +63,15 @@ CMD jekyll build && jekyll serve --host=* --port=80
 
 ![创建容器](http://zhangqianhai.com/img/post/20160523/creat.png)
 
-经济实惠，更多创建指南详见：[如何创建集群](https://c.163.com/wiki/index.php?title=创建集群)。
+依赖项较多，首次创建镜像耗时较长，耐心等待即可。更多创建指南详见：[如何创建集群](https://c.163.com/wiki/index.php?title=创建集群)。
 
 ## 3. 添加 WebHook
+网易蜂巢集群提供成品 WebHook URL，添加 WebHook 本地提交代码至 GitHub 后，集群将自动同步远程代码，无需人工介入。
+
 进入蜂巢控制台，复制集群 WebHook URL：
 ![](http://zhangqianhai.com/img/post/20160523/web-hook-url.png)
 
-GitHub 项目「Settings」添加 WebHook：
+进入你的 GitHub 项目「Settings」添加 WebHook：
 ![添加WebHook](http://zhangqianhai.com/img/post/20160523/add-webhook.png)
 注：添加时「Content type」下拉选择「application/x-www-form-urlencoded」，其他选项默认即可。
 
