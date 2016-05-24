@@ -7,6 +7,7 @@ author:     "Hai"
 header-img: "img/post-head/201605112005.jpg"
 tags:
     - Docker
+    - 网易蜂巢
 ---
 
 过去几年开源界以 Openstack 为代表的云计算持续火了好久，这两年突然又冒出一个叫 Docker 的容器技术，其发展之迅猛远超预料。

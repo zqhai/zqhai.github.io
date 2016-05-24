@@ -2,9 +2,9 @@
 layout:     post
 title:      "两分钟使用网易蜂巢自动化部署 Jekyll 博客"
 subtitle:   " \"网易蜂巢实践\""
-date:       2016-05-23 00:00:00
+date:       2016-05-24 00:00:00
 author:     "Hai"
-header-img: "img/post-head/201605112005.jpg"
+header-img: "img/post-head/201605241906.jpg"
 tags:
     - 网易蜂巢
     - Jekyll
@@ -39,7 +39,7 @@ tags:
 
 ## 1. 添加 Dockerfile
 
-在你的 Github 项目内添加 Dockerfile 文件（若直接 Fork Demo 则无需再添加 ），内容如下：
+在你的 Github 项目内添加 Dockerfile 文件（若直接 Fork 的 Demo 则无需再添加 ），内容如下：
 
 ```
 FROM hub.c.163.com/nce2/nodejs:0.12.2
@@ -62,28 +62,33 @@ CMD jekyll build && jekyll serve --host=* --port=80
 ## 2. 创建网易蜂巢集群
 
 ![创建容器](http://zhangqianhai.com/img/post/20160523/creat.png)
-
 依赖项较多，首次创建镜像耗时较长，耐心等待即可。更多创建指南详见：[如何创建集群](https://c.163.com/wiki/index.php?title=创建集群)。
 
 ## 3. 添加 WebHook
-网易蜂巢集群提供成品 WebHook URL，添加 WebHook 本地提交代码至 GitHub 后，集群将自动同步远程代码，无需人工介入。
+
+网易蜂巢集群提供成品 WebHook URL。添加 WebHook，本地提交代码至 GitHub 后，集群将自动同步远程代码，无需人工介入。
 
 进入蜂巢控制台，复制集群 WebHook URL：
+
 ![](http://zhangqianhai.com/img/post/20160523/web-hook-url.png)
 
-进入你的 GitHub 项目「Settings」添加 WebHook：
+进入你的 GitHub 项目，「Settings」添加 WebHook：
+
 ![添加WebHook](http://zhangqianhai.com/img/post/20160523/add-webhook.png)
 注：添加时「Content type」下拉选择「application/x-www-form-urlencoded」，其他选项默认即可。
 
 ## 4. DONE
 
 进入网易蜂巢集群详情页，查看分配到的公网 IP：
+
 ![公网IP](http://zhangqianhai.com/img/post/20160523/bgp-ip.png)
 
 在你的域名供应商处，添加一条A记录解析：
+
 ![添加A记录](http://zhangqianhai.com/img/post/20160523/host.png)
 
 等待解析生效后，即可访问：
+
 ![done](http://zhangqianhai.com/img/post/20160523/done.png)
 
 弹性扩容、性能监控、日志服务、版本管理等更多功能详见：[集群管理](https://c.163.com/wiki/index.php?title=集群管理)。
