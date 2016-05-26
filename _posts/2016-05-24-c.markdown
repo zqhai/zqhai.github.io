@@ -66,7 +66,7 @@ CMD jekyll build && jekyll serve --host=* --port=80
 
 ## 3. 添加 WebHook
 
-网易蜂巢集群提供成品 WebHook URL。添加 WebHook，本地提交代码至 GitHub 后，集群将自动同步远程代码，无需人工介入。
+网易蜂巢集群提供成品 WebHook URL。添加 WebHook 后，本地提交代码至 GitHub 时，集群将自动同步远程代码，无需人工介入。
 
 进入蜂巢控制台，复制集群 WebHook URL：
 
