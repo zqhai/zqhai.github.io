@@ -46,4 +46,4 @@
 
 
 # 技能树
-
+![技能树](https://raw.githubusercontent.com/zqhai/zqhai.github.io/master/READHAI.png)
