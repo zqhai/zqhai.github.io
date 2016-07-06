@@ -10,27 +10,8 @@ tags:
 ---
 
 原文：[Microservices in cloud-based infrastructure - Paving the way to the digital future](http://www.linkedin.com/pulse/microservices-cloud-based-infrastructure-paving-way-gunnar-menzel)
+
 作者：Gunnar Menzel
-
-# 目录
-
-<!-- MarkdownTOC -->
-
-- 简介
-- 服务术语解释
-- 微服务
-- 微服务最佳实践
-- 微服务和基础设施
-- 微服务和基础设施设计原则
-- 乐高积木方法
-- 微服务基础设施 - 乐高积木蓝图
-- 由此产生的概念模型
-- 微服务基础设施 - 合理的实现步骤
-- 总结
-- 附录：参考文献
-- 延伸阅读
-
-<!-- /MarkdownTOC -->
 
 
 # 简介
@@ -48,7 +29,7 @@ tags:
 
 现在有相当多的专业架构术语，比如面向服务架构（SOA）、事件驱动架构，微服务架构和软件定义数据中心（SDDC）。一些常见的观点认为「服务」是业务、技术功能、物理产品或架构方法，并没有标准的定义。事实上，「服务」这个词根据不同的环境有许多抽象概念：
 
-![图 1 | 不同类型的服务](http://zhangqianhai.com/img/post/20160706/Figure-1-The-different-types-of-services.png)
+![不同类型的服务](http://zhangqianhai.com/img/post/20160706/Figure-1-The-different-types-of-services.png)
 
 * （面向）服务架构：设计模式主要与企业架构及其业务、信息、信息系统和技术基础设施的整合方式相关。
 
@@ -71,7 +52,7 @@ tags:
 
 微服务架构可以视为面向组件架构和面向服务架构结合的产物。软件是一套由负责各自具体业务领域的许多小型业务组件构成的系统。他们通过明确定义服务的 API 对外提供接口。
 
-![图 2 | 三种主要的软件模式](http://zhangqianhai.com/img/post/20160706/Figure-2-The-three-main-software-patterns.png)
+![三种主要的软件模式](http://zhangqianhai.com/img/post/20160706/Figure-2-The-three-main-software-patterns.png)
 
 服务的所有权是微服务从 SOA 彻底脱离的一个方向：使用微服务，只需要一个团队或个人就可以开发和更新已有服务的代码，Netflix 就是使用这种模式的公司。微服务得以发展壮大是因为其彻底贯彻了 Eric Evans 的领域驱动设计 [1]- 因为其可以由小型的独立团队进行开发和维护。
 
@@ -113,7 +94,7 @@ tags:
 
 透明的关键推动者显然是「云」。采用云基础设施的方法，将加速基于微服务应用程序的实现。
 
-![图 3 | 软件模式和相关基础设施建设蓝图](http://zhangqianhai.com/img/post/20160706/Figure-3-Software-pattern-and-the-related-infrastructure-blueprint.png)
+![软件模式和相关基础设施建设蓝图](http://zhangqianhai.com/img/post/20160706/Figure-3-Software-pattern-and-the-related-infrastructure-blueprint.png)
 
 软件模式和相关基础设施建设蓝图的基础设施，更准备地说是技术基础设施，是所有在特定的环境通过信息系统（应用程序）对使用或消费的数据进行存储、处理和传输的技术组件的组合；有一定的性能特征和一系列所谓的非功能性需求。
 
@@ -124,14 +105,14 @@ tags:
 
 基于微服务的基础设施平台必须软件化。这意味着将由软件实现数据中心的全自动化，以便通过软件管理硬件配置、存储供给，网络配置。这与通常使用硬件和驱动管理，需要手动操作进行更改基础设施的传统数据中心不同。
 
-![图 4 | 支持微服务的基础设施特点](http://zhangqianhai.com/img/post/20160706/Figure-4-Infrastructure-characteristics-to-support-microservices.png)
+![支持微服务的基础设施特点](http://zhangqianhai.com/img/post/20160706/Figure-4-Infrastructure-characteristics-to-support-microservices.png)
 
 
 # 乐高积木方法
 
 微服务需要基础设施服务能遵守之前列出的关键服务相关需求。这意味一个需求基础设施服务的个人（或微服务），遵循乐高积木原则，通过使用「简单」的购物单和交付实用型服务，应该能够构建和消费基础设施功能。
 
-![图 5 | 基于效用的乐高积木力量](http://zhangqianhai.com/img/post/20160706/Figure-5-Utility-based-Lego-power.png)
+![基于效用的乐高积木力量](http://zhangqianhai.com/img/post/20160706/Figure-5-Utility-based-Lego-power.png)
 
 基础设施服务应该有标准的积木（比如服务、存储和网络），以及由这些积木构成的附加组件（比如Web服务器、预生产环境等）。每个标准的积木和附加组件必须不做任何修改就可以满足不同的 SLA（服务级别协议）和 KPI（关键性能指标）。
 
@@ -151,7 +132,7 @@ tags:
 	* 进行满负荷性能测试
 	* 为最终用户进行关键技术培训
 
-![图 6 | 基于乐高积木方法的基础设施](http://zhangqianhai.com/img/post/20160706/Figure-6-Infrastructure-Lego-based-approach.png)
+![基于乐高积木方法的基础设施](http://zhangqianhai.com/img/post/20160706/Figure-6-Infrastructure-Lego-based-approach.png)
 
 「基于乐高积木方法购物单」的关键组件是服务级别特点。每个客户环境都是不同。然而，每个客户端都将会有一个特定的服务级别：从白金（99.999%）到青铜（99%）。当然一整套不同的非功能性需求将会影响底层的基础设施。
 
@@ -171,7 +152,7 @@ tags:
 
 如上所述，主要有4个类别：白金、黄晶、白银和青铜，如何下图所定义[^6]：
 
-![图 7 | 合理的服务级别特点](http://zhangqianhai.com/img/post/20160706/Figure-7-Possible-service-level-characteristics.png)
+![合理的服务级别特点](http://zhangqianhai.com/img/post/20160706/Figure-7-Possible-service-level-characteristics.png)
 
 注意：这个分组和详细的业务特点仅是范例。每个客户环境是不同的，对于一些黄金级业务服务（或 IT 应用程序）可能有长达 6 小时恢复时间目标和 45 分钟恢复点目标。
 
@@ -182,7 +163,7 @@ tags:
 
 根据乐高积木原则，每个使用基础乐高积木的组件会遵循不同的蓝图以满足所需的各种非功能性需求和行为。和真正的乐高积木一样，有着无数的选择以建造任何所需要的飞机、房子或城堡。唯一的限制是物理尺寸和特征。
 
-![图 8 | 乐高积木的伸缩性，一体适用](http://zhangqianhai.com/img/post/20160706/Figure-8-Legos-scalabilty-one-size-fits-all.png)
+![乐高积木的伸缩性，一体适用](http://zhangqianhai.com/img/post/20160706/Figure-8-Legos-scalabilty-one-size-fits-all.png)
 
 在基础设施环境中使用乐高法则，同样的原则适用于：一套 ILB 用来创建一个预生产环境，同样也可以用来创建一个高可用的生产环境。关键是要使用标准 LIB 并在清晰的蓝图上基于目标进行构建。
 
@@ -193,7 +174,7 @@ tags:
 
  Infrastructure Lego® based approach
 
-![图 9 | 基于乐高的基础设施](http://zhangqianhai.com/img/post/20160706/Figure-9-Infrastructure-Lego-based-approach.png)
+![基于乐高的基础设施](http://zhangqianhai.com/img/post/20160706/Figure-9-Infrastructure-Lego-based-approach.png)
 
 当使用微服务时，特别在有些方面如云环境中的分段、编排、自动化、池化和安全是团队应该考虑的关键理论能力。这样一个概念模型可以作为从 SOA 到基于微服务方法转换的一部分，协助精准的产品选择。
 
@@ -201,7 +182,7 @@ tags:
 
 没有客户环境能一步实现微服务[^8]，为了确保现有的基础设施服务可以支持和提供基于微服务的能力，应该考虑以下的四个步骤：
 
-![图 10 | 微服务实现步骤](http://zhangqianhai.com/img/post/20160706/Figure-10-Microservices-implementation-steps.png)
+![微服务实现步骤](http://zhangqianhai.com/img/post/20160706/Figure-10-Microservices-implementation-steps.png)
 
 
 # 总结
