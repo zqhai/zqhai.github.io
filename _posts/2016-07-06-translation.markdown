@@ -11,9 +11,6 @@ tags:
 
 原文：[Microservices in cloud-based infrastructure - Paving the way to the digital future](http://www.linkedin.com/pulse/microservices-cloud-based-infrastructure-paving-way-gunnar-menzel)
 
-作者：Gunnar Menzel
-
-
 # 简介
 
 > 微服务需要一种新的基础设施构建方式：微服务意识（microservices-aware）必须遵循乐高积木方法。
