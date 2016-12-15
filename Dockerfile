@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y --force-yes ruby ruby-dev gcc make
 
 # 修改gem sourece
 RUN gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
-RUN gem install jekyll 
+RUN gem install jekyll -v 2.5
 RUN gem install jekyll-paginate
 
 
